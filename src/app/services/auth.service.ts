@@ -7,13 +7,12 @@ import { delay } from 'rxjs/operators';
 export class AuthService {
   private tokenKey = 'auth_token';
 
-  // Initialize with false first, we'll update it in the constructor
   private _authStatus = new BehaviorSubject<boolean>(false);
   authStatus$ = this._authStatus.asObservable();
 
   constructor(private router: Router) {
     const token = this.getToken();
-    this._authStatus.next(!!token); // this ensures the correct state is emitted after refresh
+    this._authStatus.next(!!token);
   }
 
   login(credentials: { username: string; password: string }): Observable<{ token: string }> {
@@ -23,7 +22,7 @@ export class AuthService {
     if (credentials.username === mockUsername && credentials.password === mockPassword) {
       const fakeToken = 'mock-jwt-token-12345';
       this.setToken(fakeToken);
-      this._authStatus.next(true); // notify subscribers
+      this._authStatus.next(true);
       return of({ token: fakeToken }).pipe(delay(500));
     } else {
       return throwError(() => new Error('Invalid username or password'));
@@ -32,7 +31,7 @@ export class AuthService {
 
   logout(): void {
     localStorage.removeItem(this.tokenKey);
-    this._authStatus.next(false); // notify logout
+    this._authStatus.next(false);
     this.router.navigate(['/login']);
   }
 

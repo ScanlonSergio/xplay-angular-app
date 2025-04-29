@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ApiInterceptor } from './interceptor/api.interceptor';
 
@@ -14,6 +15,7 @@ import { IndexComponent } from './pages/index/index.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { MobileFooterComponent } from './components/mobile-footer/mobile-footer.component';
 
 @NgModule({
     declarations: [
@@ -21,13 +23,15 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
         IndexComponent,
         DashboardComponent,
         HeaderComponent,
-        SidebarComponent
+        SidebarComponent,
+        MobileFooterComponent
     ],
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
         AppRoutingModule,
         ReactiveFormsModule,
+        FormsModule,
         AccordionModule.forRoot(),
         TabsModule.forRoot()
     ],

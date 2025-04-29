@@ -1623,9 +1623,9 @@ h6 {
     padding: 0;
 }
 
-.fullpage .footer_mobilemenu {
+/* .fullpage .footer_mobilemenu {
     display: none;
-}
+} */
 
 /*--------------------------------------------------------------
   # Sidebar
@@ -2412,9 +2412,9 @@ h6 {
 
 /*user screen*/
 
-.footer_mobilemenu {
+/* .footer_mobilemenu {
     display: none;
-}
+} */
 
 /*listing_page*/
 section.section.listing_page {
