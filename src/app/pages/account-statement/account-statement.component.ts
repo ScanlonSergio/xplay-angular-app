@@ -24,8 +24,8 @@ export class AccountStatementComponent {
     ngOnInit(): void {
         this.filterForm = this.fb.group({
             eventType: ['ALL'],
-            startDate: [null],
-            endDate: [null]
+            start_date: [null],
+            end_date: [null]
         });
         this.fetchStatements();
     }

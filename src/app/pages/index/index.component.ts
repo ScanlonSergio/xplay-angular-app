@@ -46,7 +46,7 @@ export class IndexComponent implements OnInit {
         const modalEl = document.getElementById('lognModal');
     const modalInstance = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
     modalInstance.hide();
-        this.router.navigate(['/profile']);
+        this.router.navigate(['/dashboard']);
       },
       error: (err) => {
         alert('Login failed: ' + err.message);
