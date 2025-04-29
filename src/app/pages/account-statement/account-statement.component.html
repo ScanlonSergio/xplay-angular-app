@@ -1,0 +1,88 @@
+<div id="main" class="main">
+    <section class="section listing_page accounts">
+        <div class="row">
+            <div class="col-xl-12">
+                <h2 class="userscreen-title">account statement</h2>
+                <div class="form_search">
+                    <form novalidate="" class="ng-untouched ng-pristine ng-valid">
+                        <div class="row">
+                            <div class="col-md-2 col-6">
+                                <select formcontrolname="event_type_id" class="form-control ng-untouched ng-pristine ng-valid">
+                                    <option value="ALL">All Sports </option>
+                                    <option value="4">Cricket </option>
+                                    <option value="1">Football </option>
+                                    <option value="2">Tennis </option>
+                                    <option value="99998">Int Casino </option>
+                                    <option value="99991">Sports book </option>
+                                    <option value="7">Horse Racing </option>
+                                    <option value="4339">Greyhound Racing </option>
+                                    <option value="99990">Binary </option>
+                                    <option value="99994">Kabaddi </option>
+                                    <option value="2378961">Politics </option>
+                                    <option value="7522">Basketball </option>
+                                    <option value="7511">Baseball </option>
+                                    <option value="20">Table Tennis </option>
+                                    <option value="998917">Volleyball </option>
+                                    <option value="7524">Ice Hockey </option>
+                                    <option value="5">Rugby </option>
+                                    <option value="26420387">Mixed Martial Arts </option>
+                                    <option value="3503">Darts </option>
+                                    <option value="29">Futsal </option>
+                                    <!---->
+                                </select>
+                            </div>
+                            <div class="col-md-2 col-6"><input type="date" formcontrolname="start_date" class="form-control ng-untouched ng-pristine ng-valid" /></div>
+                            <div class="col-md-2 col-6"><input type="date" formcontrolname="end_date" class="form-control ng-untouched ng-pristine ng-valid" /></div>
+                            <div class="col-md-2 col-6"><button type="submit" class="btn btn-fs">get statement</button></div>
+                            <div class="col-md-4 col-12 text-md-end text-center"><div class="document_button"></div></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="table-responsive">
+                    <table class="datatable table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>date</th>
+                                <th>Total</th>
+                                <th>balance</th>
+                                <th>D/C</th>
+                                <th>Description</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <!---->
+                        <tbody>
+                            <tr>
+                                <td colspan="10" class="noData">No Data Found</td>
+                            </tr>
+                        </tbody>
+                        <!----><!---->
+                    </table>
+                    <div class="pagination">
+                        <nav aria-label="pagination example" class="Pager1">
+                            <ul class="pagination pagination-circle justify-content-center">
+                                <li class="page-item disabled"><a href="javascript:void(0)" class="page-link">Previous Page</a></li>
+                                <li class="page-item disabled"><a href="javascript:void(0)" class="page-link">Next Page</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<nav class="footer_mobilemenu">
+    <a href="/dashboard" routerlink="/dashboard" routerlinkactive="active" class="active"><img
+        src="assets/in-play.svg" class="img-fluid" /><span>in-play</span></a>
+    <a href="javascript:void(0)" routerlinkactive="active"><img src="assets/multi.svg"
+        class="img-fluid" /><span>Multi</span></a>
+    <a href="/home" routerlink="/home" routerlinkactive="active"><img src="assets/place.svg"
+        class="img-fluid" /><span>Home</span></a>
+    <a href="/sports/99999" routerlink="/sports/99999" routerlinkactive="active"><img src="assets/icon-casino.svg"
+        class="img-fluid" /><span>Casino</span></a>
+    <a href="/sports/99998" routerlink="/sports/99998" routerlinkactive="active"><img src="assets/icon-casino.svg"
+        class="img-fluid" /><span>ICasino</span></a>
+</nav>

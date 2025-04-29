@@ -1,0 +1,49 @@
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="/" class="logo d-flex align-items-center">
+                <img alt="Logo" class="img-fluid" src="assets/11xplay/logo.png" />
+            </a>
+            <i class="bi bi-list-nested toggle-sidebar-btn ng-star-inserted"></i>
+        </div>
+
+        <nav class="header-nav ms-auto" *ngIf="!isLoggedIn">
+            <ul class="d-flex align-items-center">
+                <li class="nav-item expo_bal loginbtn">
+                    <a href="javascript:void(0);" class="nav-link">
+                        <i class="bi bi-box-arrow-in-right"></i><span>Demo</span>
+                    </a>
+                </li>
+                <li class="nav-item expo_bal signupbtn">
+                    <a href="javascript:void(0);" class="nav-link me-1" data-bs-toggle="modal" data-bs-target="#lognModal">
+                        <i class="bi bi-box-arrow-in-right"></i><span>Login</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="header-nav ms-auto" *ngIf="isLoggedIn">
+            <ul class="d-flex align-items-center">
+                <li class="nav-item balance_li me-1">
+                    <a href="javascript:void(0);" class="nav-link">
+                        <i class="bi bi-bank"></i> Balance <b>0</b>
+                    </a>
+                </li>
+                <li class="nav-item expo_li">
+                    <a href="/market-analysis" routerLink="/market-analysis" class="nav-link">
+                        <i class="bi bi-bar-chart"></i> expo. <b>0</b>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-sm btn-outline-danger ms-2" (click)="logout()">
+                        <i class="bi bi-box-arrow-right"></i> Logout
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="commentary"><img src="assets/commentary.png" />
+    <marquee>New Version Available With International Casino Please Contact Your Upline</marquee>
+</div>
