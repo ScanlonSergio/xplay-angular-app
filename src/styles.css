@@ -1618,9 +1618,15 @@ h6 {
 
 .fullpage #main,
 .fullpage #footer {
-    margin-left: 0;
+    /* margin-left: 0; */
     margin-bottom: 0;
-    padding: 0;
+    padding: 5px;
+}
+
+@media (max-width: 992px) {
+    .fullpage #main {
+        margin-bottom: 80px;
+    }
 }
 
 /* .fullpage .footer_mobilemenu {
